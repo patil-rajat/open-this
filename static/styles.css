@@ -1,0 +1,59 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #b9dbe7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    background-color: #ecefd3;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.oooh-baby-regular {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.title {
+    font-family: "Oooh Baby", cursive;
+    font-size: 44px;
+    color: #ff6f61;
+    margin: 0;
+}
+
+.message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.birthday-image {
+    width: 45%; /* Make sure the images stay side by side */
+    height: auto;
+    border-radius: 10px;
+}
+
+.signature {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-top: 10px;
+}
