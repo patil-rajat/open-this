@@ -43,12 +43,16 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    justify-content: space-between; /* Adjusts space between images */
+    flex-wrap: wrap; /* Allow images to wrap if necessary */
 }
 
 .birthday-image {
     width: 45%; /* Make sure the images stay side by side */
     height: auto;
+    max-height: 200px;
     border-radius: 10px;
+    object-fit: cover; 
 }
 
 .signature {
