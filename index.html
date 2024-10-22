@@ -13,27 +13,22 @@
 </head>
 <body>
     <div class="card">
-        <h1 class="title">🎉Happy Birthday, Palak! 🎉</h1>
+        <h1 class="title">🎉Happy Birthday, {{name}}! 🎉</h1>
         <p class="message">Wishing you a day filled with happiness and a year filled with joy! 🎂</p>
-
         <div class="image-container">
-            <img class="birthday-image" src="https://patil-rajat.github.io/open-this/static/pl1.jpeg" alt="p1"></img>
-            <img class="birthday-image" src="https://patil-rajat.github.io/open-this/static/pl2.jpeg" alt="p2"></img>
+            <img class="birthday-image" src="static/pl1.jpeg" alt="p1"></img>
+            <img class="birthday-image" src="static/pl2.jpeg" alt="p2"></img>
         </div>
 
-        <p class="signature">~Rajat</p>
+        <p class="signature">~{{sender}}</p>
     </div>
-
     <script>
-        // Confetti Animation when page loads
         window.onload = function() {
             confetti({
                 particleCount: 150,
                 spread: 70,
                 origin: { y: 0.6 }
             });
-
-            // Run the confetti for 3 seconds
             setTimeout(() => confetti.reset(), 3000);
         };
     </script>
