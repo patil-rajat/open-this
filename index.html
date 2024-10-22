@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="stylesheet" filename='styles.css'>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">🎉Happy Birthday, Palak! 🎉</h1>
+        <p class="message">Wishing you a day filled with happiness and a year filled with joy! 🎂</p>
+
+        <div class="image-container">
+            <img src="static/pl1.jpeg" alt="p1"></img>
+            <img src="static/pl2.jpeg" alt="p2"></img>
+        </div>
+
+        <p class="signature">~Rajat</p>
+    </div>
+
+    <script>
+        // Confetti Animation when page loads
+        window.onload = function() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+
+            // Run the confetti for 3 seconds
+            setTimeout(() => confetti.reset(), 3000);
+        };
+    </script>
+</body>
+</html>
